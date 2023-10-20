@@ -1,0 +1,25 @@
+body {
+    background-color: #ADD8E6; 
+} 
+h1 h2 {
+    text-align: center;
+}
+article {
+    background-color: 	#87CEEB;
+}
+/* Center-align the text within the container */
+.container {
+    max-width: 800px; /* Adjust the value to your preferred maximum width */
+    margin: 0 auto; /* Center the container horizontally */
+}
+
+/* Left-align the paragraphs within the container */
+.container p {
+    text-align: left;
+}
+
+p {
+    max-width: 600px;
+    margin: 0 auto;
+  
+}

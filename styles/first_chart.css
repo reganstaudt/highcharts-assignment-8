@@ -16,7 +16,10 @@ body {
 }
 
 /*  the #container div (below) holds ONE chart  */
-#container {}
+#container {
+  height: 300px; 
+  width: 400px; 
+}
 
 p {
   line-height: 1.5;

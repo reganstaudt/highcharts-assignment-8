@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+		<meta charset="utf-8">
+        <title>United States Hate Crime Statistics: 2019 </title>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> 
+    	<script src="https://code.highcharts.com/highcharts.js"></script>
+        <script src="https://code.highcharts.com/modules/exporting.js"></script>
+        <script src="main.js"></script>
+        <link href="styles/main.css" rel="stylesheet">
+        
+       
+</head>
+<body>
+    <div class="container"> 
+<header>
+<h1>United States Hate Crime Statistics: 2019</h1>
+</header>
+<article>
+<p> By: Regan Staudt</p>
+<h2> 2019 Hate Crime Incident Classifications </h2>
+<figure>
+<div id="container"></div> </figure>
+<script>
+$(document).ready(function(){
+    $('#container').highcharts({
+        chart: {
+            type: 'bar'
+        },
+        title: {
+            text: '2019 Hate Crime Incidents'
+        },
+        xAxis: {
+            categories: ['Race','Religion','Sexual Orientation','Disability','Gender','Gender Identity','Multiple-Bias Incidents']
+        },
+        yAxis: {
+            title: {
+                text: 'Number of Incidents'
+            }
+        },
+        series: [{
+            name: 'Year 2019',
+            data: [3963, 1521, 1195, 157, 69, 198, 211]
+     }]
+    });
+});
+
+</script>
+<figure>
+    <figcaption>
+        Graph Information: <a 
+href="https://ucr.fbi.gov/hate-crime/2019/resource-pages/tables/table-1.xls">FBI.gov</a>
+    </figcaption>
+</figure>
+
+<p> The word “hate” is thrown around in our society. I do not take the word "hate" lightly. Hate is feeling so violent that you can only describe it with that word. In 2019 the concept of hate resulted in 7,314 incidents. Hate crime is defined as "a crime, typically one involving violence, that is motivated by prejudice on the basis of ethnicity, religion, sexual orientation, or similar grounds." Over 7,000 incidents of this malice. The United States dictates that if a crime committed has been fueled with prejudice precursors then said offence could be deemed as a hate crime. Hate crimes do not only violate the victim, but also the community to which the victim belongs.</p>  
+
+<h2> Hate Crimes 2019: Race</h2>
+<figure>
+<div id="something" style="min-width: 600px; height: 400px; max-width: 800px; margin: 0 auto"></div> </figure>
+<script>
+    
+  $(function () {
+    $('#something').highcharts({
+        chart: {
+            plotBackgroundColor: null,
+            plotBorderWidth: null,
+            plotShadow: false,
+            type: 'pie'
+        },
+        title: {
+            text: '2019 Hate Crimes Against Race'
+        },
+        tooltip: {
+            pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+        },
+        plotOptions: {
+            pie: {
+                allowPointSelect: true,
+                cursor: 'pointer',
+                dataLabels: {
+                    enabled: true,
+                    format: '<b>{point.name}</b>: {point.percentage:.1f} %',
+                    style: {
+                        color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
+                    }
+                }
+            }
+        },
+        series: [{
+            name: "Percentage",
+            colorByPoint: true,
+            data: [{
+                name: "Anti-White",
+                y: 16.81
+
+            }, {
+                name: "Anti-Black or African American",
+                y: 48.7
+                
+            }, {
+                name: "Anti-American Indian or Alaska Native",
+                y: 3.0
+            }, {
+                name: "Anti-Asian",
+                y: 3.98
+            }, {
+                name: "Anti-Native Hawaiian or Other Pacific Islander",
+                y: 0.53
+            }, {
+                name: "Anti-Multiple Races, Group",
+                y: 3.38
+            },
+            {   name: "Anti-Arab", 
+                y: 2.4 
+            },
+
+            {   name: "Anti-Hispanic or Latino", 
+                y: 13.3
+            } ,
+                { 
+                name: "Anti-Other Race/Ethnicity/Ancestry", 
+                y: 7.9 
+                }
+        ]
+        }]
+    });
+});
+
+</script>
+<figure>
+    <figcaption>
+        Graph Information: <a href="https://ucr.fbi.gov/hate-crime/2019/resource-pages/tables/table-1.xls">FBI.gov</a>
+    </figcaption>
+</figure>
+
+<p> Sadly, racial hate crimes have proliferated through the media for decades. In 2020, this really came to light. With the murder of George Floyd the country errupted into protest. People wanted to justice for this hate crime. As the chart up top shows, race is the number one motivation for hate crimes. Within race, crimes against African-Americans account for almost half of all race indunced hate crimes. The severity of racism and it’s association with hate crimes have yet to decrease, the graph above shows the percentage of hate crimes committed against various races in 2019.</p>
+</article>
+</div>
+</body>
+</html>

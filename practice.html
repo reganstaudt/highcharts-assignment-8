@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+		<meta charset="utf-8">
+        <title>United States Hate Crime Statistics: 2013 </title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"> </script>
+        
+    	<script src="http://code.highcharts.com/highcharts.js"></script>
+		<script src="http://code.highcharts.com/modules/exporting.js"></script>
+		
+        <link href="styles/styles.css" rel="stylesheet">
+        
+       
+</head>
+<body>
+<header>
+<h1>United States Hate Crime Statistics: 2013</h1>
+</header>
+<p> By Lauren Johnson</p>
+<article>
+<h2> 2013 Hate Crime Incident Classifications </h2>
+
+<figure>
+<div id="container" style="min-width: 600px; max-width: 800px; height: 400px; margin: 0 auto"></div>
+<script>
+$(document).ready(function(){
+    $('#container').highcharts({
+        chart: {
+            type: 'bar'
+        },
+        title: {
+            text: '2013 Hate Crime Incidents'
+        },
+        xAxis: {
+            categories: ['Race','Religion','Sexual Orientation','Ethnicity','Disability','Gender','Gender Identity','Multiple-Bias Incidents']
+        },
+        yAxis: {
+            title: {
+                text: 'Number of Incidents'
+            }
+        },
+        series: [{
+            name: 'Year 2013',
+            data: [2871, 1031, 1233, 655, 83, 18, 31, 6]
+     }]
+    });
+});
+
+</script>
+
+
+    <figcaption>
+        Graph Information: <a 
+href="https://www.fbi.gov/about-us/cjis/ucr/hate-crime/2013/tables/8tabledatadecpdf/table_8_incidents_bias_motivation_by_victim_type_2013.xls">FBI.gov</a>
+    </figcaption>
+</figure>
+
+<div id="paragraphone">
+<p> The word “hate” connotatively resonates with everyone differently. When I think of the word “hate”, I imagine mundane annoyances that we face on a daily basis. In 2013 the concept of hate resulted in 6,933 assaults. The United States dictates that if a crime committed has been fueled with prejudice precursors then said offence could be deemed as a hate crime. Hate crimes do not only violate the victim, but also the community to which the victim belongs.  The Federal Bureau of Investigation reported nearly 7,000 hate crime offenses in the United States of 2013.</p>  
+
+<p>Above is a graph presenting the categorical breakdown of the hate crime offenses committed in 2013. 
+</p>
+<figure>
+<figcaption>
+	Sources <a
+	href="http://www.adl.org/assets/pdf/combating-hate/Introduction-to-Hate-Crime-Laws.pdf">
+	Hate Crime Laws</a>
+</figcaption>
+</figure>
+</div>
+</article>
+
+<h2> Hate Crimes 2013: Race</h2>
+<figure>
+<div id="something" style="min-width: 600px; height: 400px; max-width: 800px; margin: 0 auto"></div>
+<script>
+$(function () {
+    $('#something').highcharts({
+        chart: {
+            plotBackgroundColor: null,
+            plotBorderWidth: null,
+            plotShadow: false,
+            type: 'pie'
+        },
+        title: {
+            text: '2013 Hate Crimes Against Race'
+        },
+        tooltip: {
+            pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+        },
+        plotOptions: {
+            pie: {
+                allowPointSelect: true,
+                cursor: 'pointer',
+                dataLabels: {
+                    enabled: true,
+                    format: '<b>{point.name}</b>: {point.percentage:.1f} %',
+                    style: {
+                        color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
+                    }
+                }
+            }
+        },
+        series: [{
+            name: "Percentage",
+            colorByPoint: true,
+            data: [{
+                name: "Anti-White",
+                y: 16.81
+
+            }, {
+                name: "Anti-Black or African American",
+                y: 48.7
+                
+            }, {
+                name: "Anti-American Indian or Alaska Native",
+                y: 3.0
+            }, {
+                name: "Anti-Asian",
+                y: 3.98
+            }, {
+                name: "Anti-Native Hawaiian or Other Pacific Islander",
+                y: 0.53
+            }, {
+                name: "Anti-Multiple Races, Group",
+                y: 3.38
+            }
+                name: "Anti-Arab",
+                y: 2.4 ]
+        }]
+    });
+});
+
+</script>
+
+    <figcaption>
+        Graph Information: <a href="https://www.fbi.gov/about-us/cjis/ucr/hate-crime/2013/tables/4tabledatadecpdf/table_4_offenses_offense_type_by_bias_motivation_2013.xls">FBI.gov</a>
+    </figcaption>
+</figure>
+<div id="paragraphtwo">
+<p> Racial hate crimes have proliferated through the media for decades. The most recent revival of media circulation involving hate crimes against race was in 2014 with the murder of an African-American youth, Michael Brown.  Out of the 3,400 racially fueled hate crimes committed in the United States in 2013, roughly 2,000 of the crimes committed were against African-Americans.  In 2012, The Federal Bureau Investigation reported that more than 50 out of every 1 million African-American citizens fell victim to a hate crime.  </p>
+<p> The severity of racism and it’s association with hate crimes have yet to decrease, the graph above shows the percentage of hate crimes committed against various races in 2013.</p>
+<figure>
+<figcaption>
+	Sources <a
+	href="http://www.washingtonpost.com/news/wonkblog/wp/2015/06/18/5-charts-show-the-stubborn-persistence-of-american-hate-crime/">
+	Washington Post Article </a>
+</figcaption>
+</figure>
+</div>
+</body>
+</html>
